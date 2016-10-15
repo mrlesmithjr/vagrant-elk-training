@@ -17,7 +17,8 @@ vagrant ssh
 Now we will install the pre-reqs for [Logstash]:
 
 ```
-sudo apt-get update && sudo apt-get install -y default-jre-headless```
+sudo apt-get update && sudo apt-get install -y default-jre-headless
+```
 
 With that out of the way we are now ready to install [Logstash]:
 
