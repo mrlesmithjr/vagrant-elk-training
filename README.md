@@ -24,6 +24,7 @@ git clone https://github.com/mrlesmithjr/vagrant-elk-training.git
 Series
 ------
 * [1-Installing-Logstash](1-Installing-Logstash/README.md)
+* [2-Basic-Logstash-Configuration](2-Basic-Logstash-Configuration/README.md)
 
 
 [Elasticsearch]: <https://www.elastic.co/products/elasticsearch>
