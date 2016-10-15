@@ -32,7 +32,7 @@ echo "deb https://packages.elastic.co/logstash/2.4/debian stable main" | sudo te
 ```
 * Install [Logstash]
 ```
-sudo apt-get update && sudo apt-get install logstash
+sudo apt-get update && sudo apt-get install -y logstash
 ```
 
 Once that completes successfully you have now completed the [Logstash]
