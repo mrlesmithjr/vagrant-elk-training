@@ -16,6 +16,10 @@ in which you plan on using for the training.
 * [Git]
 * [Virtualbox]
 * [Vagrant]
+* Clone this repository
+```
+git clone https://github.com/mrlesmithjr/vagrant-elk-training.git
+```
 
 Series
 ------
