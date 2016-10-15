@@ -40,4 +40,5 @@ installation.
 
 [Elasticsearch]: <https://www.elastic.co/products/elasticsearch>
 [Logstash]: <https://www.elastic.co/products/logstash>
+[Ubuntu]: <https://www.ubuntu.com/>
 [Vagrant]: <https://www.vagrantup.com/>
