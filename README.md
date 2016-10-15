@@ -1,4 +1,4 @@
-ELK (Elasticsearch, Logstash, and Kibana) Training
+ELK ([Elasticsearch], [Logstash], and [Kibana]) Training
 ==================================================
 
 The purpose of this repository is to start from the basics of getting your
@@ -9,3 +9,8 @@ Stack. Also now called the Elastic Stack.
 Series
 ------
 * [1-Installing-Logstash](1-Installing-Logstash/README.md)
+
+
+[Elasticsearch]: <https://www.elastic.co/products/elasticsearch>
+[Kibana]: <https://www.elastic.co/products/kibana>
+[Logstash]: <https://www.elastic.co/products/logstash>
