@@ -25,6 +25,7 @@ Series
 ------
 * [1-Installing-Logstash](1-Installing-Logstash/README.md)
 * [2-Basic-Logstash-Configuration](2-Basic-Logstash-Configuration/README.md)
+* [3-Rsyslog-Redirect-To-Logstash](3-Rsyslog-Redirect-To-Logstash/README.md)
 
 
 [Elasticsearch]: <https://www.elastic.co/products/elasticsearch>

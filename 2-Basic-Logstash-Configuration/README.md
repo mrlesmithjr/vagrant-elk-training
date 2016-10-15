@@ -19,7 +19,7 @@ configuration:
   run as root. This is not something that we want to do.
 * Configure a type of `syslog` to identify which input our events are arriving on.
 * Configure a filter to create a tag of `syslog` based on our type being `syslog`
-* Configure an output of stdout
+* Configure an output of `stdout`
 
 With the above being defined we can now create our `/etc/logstash/conf.d/logstash.conf`
 with the following code:
@@ -96,7 +96,7 @@ UNCONN      0      0                                                            
 users:(("ntpd",pid=800,fd=16))
 ```
 And as you can see from above we are indeed listening on `10514 TCP/UDP`. Now to
-validate that we are indeed receiving events on our stdout we can do the following:
+validate that we are indeed receiving events on our `stdout` we can do the following:
 
 Stop [Logstash] service:
 ```
