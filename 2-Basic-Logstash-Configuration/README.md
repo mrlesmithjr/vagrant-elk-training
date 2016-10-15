@@ -138,5 +138,7 @@ sudo service logstash start
 At this point you could begin setting up remote devices to send to your [Logstash]
 instance on `10514 TCP/UDP` but you wont get a whole lot at this point.
 
+[Home](../README.md)
+
 [Logstash]: <https://www.elastic.co/products/logstash>
 [Vagrant]: <https://www.vagrantup.com/>

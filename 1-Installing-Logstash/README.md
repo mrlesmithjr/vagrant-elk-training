@@ -38,6 +38,8 @@ sudo apt-get update && sudo apt-get install -y logstash
 Once that completes successfully you have now completed the [Logstash]
 installation.
 
+[Home](../README.md)
+
 [Elasticsearch]: <https://www.elastic.co/products/elasticsearch>
 [Logstash]: <https://www.elastic.co/products/logstash>
 [Ubuntu]: <https://www.ubuntu.com/>
