@@ -1,5 +1,5 @@
 ELK ([Elasticsearch], [Logstash], and [Kibana]) Training
-==================================================
+========================================================
 
 The purpose of this repository is to start from the basics of getting your
 ELK Stack up and running. We will be starting from the very basic installation
@@ -10,9 +10,10 @@ Stack. Also now called the Elastic Stack.
 Pre-Reqs
 --------
 The following is a list of pre-reqs which will be required in order to work
-through this series.
+through this series. Each of these will need to be installed on your workstation
+in which you plan on using for the training.
 
-* [Git] client installed
+* [Git]
 * [Virtualbox]
 * [Vagrant]
 
