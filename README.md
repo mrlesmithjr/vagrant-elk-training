@@ -28,6 +28,7 @@ Series
 * [3-Rsyslog-Redirect-To-Logstash](3-Rsyslog-Redirect-To-Logstash/README.md)
 * [4-Installing-Elasticsearch](4-Installing-Elasticsearch/README.md)
 * [5-Configuring-Logstash-Elasticsearch-Output](5-Configuring-Logstash-Elasticsearch-Output/README.md)
+* [6-Installing-Kibana](6-Installing-Kibana/README.md)
 
 
 [Elasticsearch]: <https://www.elastic.co/products/elasticsearch>
