@@ -62,7 +62,7 @@ With [Kibana] up and running now you should be able to connect to the [Kibana
 UI] using your browser. And the first time you connect you should see the following
 screen:
 
-![Kibana_UI_Configure](Kibana_UI_Configure.jpg)
+![Kibana_UI_Configure](Kibana_UI_Configure.png)
 
 The only setting that you should need to configure is the drop-down under
 `Time-field name` which we need to set to `@timestamp` and then click `create`.
