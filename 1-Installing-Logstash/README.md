@@ -38,7 +38,7 @@ sudo apt-get update && sudo apt-get install -y logstash
 Once that completes successfully you have now completed the [Logstash]
 installation.
 
-One final not is to ensure that [Logstash] is enabled and starts on boot.
+One final note is to ensure that [Logstash] is enabled and starts on boot.
 
 `Ubuntu 14.04`
 ```
