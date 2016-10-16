@@ -60,6 +60,12 @@ linked_clones = false
 port_forwards = [
   {
     :node => "node0",
+    :guest => 5601,
+    :host => 5601,
+    :protocol => "tcp"
+  },
+  {
+    :node => "node0",
     :guest => 9200,
     :host => 9200,
     :protocol => "tcp"
