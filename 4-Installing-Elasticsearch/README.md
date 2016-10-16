@@ -75,3 +75,4 @@ curl http://localhost:9200
 
 [Elasticsearch]: <https://www.elastic.co/products/elasticsearch>
 [Logstash]: <https://www.elastic.co/products/logstash>
+[Vagrant]: <https://www.vagrantup.com/>

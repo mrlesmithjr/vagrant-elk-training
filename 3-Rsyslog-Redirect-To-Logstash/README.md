@@ -91,3 +91,4 @@ their events to our [Logstash] server and [Rsyslog] will begin redirecting to
 
 [Logstash]: <https://www.elastic.co/products/logstash>
 [Rsyslog]: <https://en.wikipedia.org/wiki/Rsyslog>
+[Vagrant]: <https://www.vagrantup.com/>
