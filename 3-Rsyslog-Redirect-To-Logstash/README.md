@@ -14,7 +14,7 @@ a non standard port of `514` especially.
 
 Assumption(s)
 -------------
-* The [Vagrant] VM is still up and running from the [1st section](1-Installing-Logstash/README.md).
+* The [Vagrant] VM is still up and running from the [1st section](../1-Installing-Logstash/README.md).
 
 How-to
 ------

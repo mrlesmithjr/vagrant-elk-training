@@ -7,7 +7,7 @@ configuration to start laying the foundation of more advanced configurations.
 
 Assumption(s)
 -------------
-* The [Vagrant] VM is still up and running from the [1st section](1-Installing-Logstash/README.md).
+* The [Vagrant] VM is still up and running from the [1st section](../1-Installing-Logstash/README.md).
 
 Basic configuration:
 --------------------
