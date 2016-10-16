@@ -19,6 +19,8 @@ configuration:
   run as root. This is not something that we want to do.
 * Configure a type of `syslog` to identify which input our events are arriving on.
 * Configure a filter to create a tag of `syslog` based on our type being `syslog`
+* Configure a filter to do some initial `syslog` parsing, specifically to correctly
+  identify the correct `timestamp`
 * Configure an output of `stdout`
 
 With the above being defined we can now create our `/etc/logstash/conf.d/logstash.conf`
@@ -40,6 +42,18 @@ filter {
   if [type] == "syslog" {
     mutate {
       add_tag => [ "syslog" ]
+    }
+  }
+}
+filter {
+  if [type] == "syslog" {
+    grok {
+      match => { "message" => "%{SYSLOGTIMESTAMP:syslog_timestamp} %{SYSLOGHOST:syslog_hostname} %{DATA:syslog_program}(?:\[%{POSINT:syslog_pid}\])?: %{GREEDYDATA:syslog_message}" }
+      add_field => [ "received_at", "%{@timestamp}" ]
+      add_field => [ "received_from", "%{host}" ]
+    }
+    date {
+      match => [ "syslog_timestamp", "MMM  d HH:mm:ss", "MMM dd HH:mm:ss" ]
     }
   }
 }
