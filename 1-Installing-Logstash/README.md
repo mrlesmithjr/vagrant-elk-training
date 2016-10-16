@@ -38,6 +38,19 @@ sudo apt-get update && sudo apt-get install -y logstash
 Once that completes successfully you have now completed the [Logstash]
 installation.
 
+One final not is to ensure that [Logstash] is enabled and starts on boot.
+
+`Ubuntu 14.04`
+```
+sudo update-rc.d logstash defaults 96 9
+```
+`Ubuntu 16.04`
+```
+sudo systemctl enable logstash
+```
+If you are using this [Vagrant] VM to learn with then you will use the
+`Ubuntu 16.04` method above.
+
 [Home](../README.md)
 
 [Elasticsearch]: <https://www.elastic.co/products/elasticsearch>
