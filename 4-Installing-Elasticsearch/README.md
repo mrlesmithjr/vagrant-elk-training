@@ -71,5 +71,7 @@ curl http://localhost:9200
 }
 ```
 
+[Home](../README.md)
+
 [Elasticsearch]: <https://www.elastic.co/products/elasticsearch>
 [Logstash]: <https://www.elastic.co/products/logstash>
