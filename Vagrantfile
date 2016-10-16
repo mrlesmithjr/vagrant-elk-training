@@ -54,24 +54,27 @@ desktop = false
 #Define if custom boxes should be used...defined in nodes var..
 enable_custom_boxes = false
 #Define if port forwards should be enabled (true|false)
-enable_port_forwards = false
+enable_port_forwards = true
 #Defines if nodes should be linked from master VM (true|false)
 linked_clones = false
 port_forwards = [
   {
     :node => "node0",
-    :guest => 3306,
-    :host => 3306
+    :guest => 9200,
+    :host => 9200,
+    :protocol => "tcp"
   },
   {
     :node => "node0",
-    :guest => 80,
-    :host => 8080
+    :guest => 10514,
+    :host => 10514,
+    :protocol => "tcp"
   },
   {
     :node => "node0",
-    :guest => 8000,
-    :host => 8000
+    :guest => 10514,
+    :host => 10514,
+    :protocol => "udp"
   }
 ]
 #Define if provisioners should run (true|false)
@@ -83,7 +86,7 @@ random_ips = false
 server_cpus = 1
 #Define amount of memory to assign to node(s)
   #will be ignored if custom_cpu_mem == true
-server_memory = 512
+server_memory = 1024
 #Define subnet for private_network (If not using DHCP)
 subnet = "192.168.202."
 #Define starting last octet of the subnet range to begin addresses for node(s)
@@ -197,7 +200,7 @@ Vagrant.configure(2) do |config|
         port_forwards.each do |pf|
           if pf[:node] == "node#{nid}"
             node.vm.network :forwarded_port, guest: pf[:guest], \
-            host: pf[:host]
+            host: pf[:host], protocol: pf[:protocol]
           end
         end
       end
