@@ -113,8 +113,13 @@ And as you can see from above we are indeed listening on `10514 TCP/UDP`. Now to
 validate that we are indeed receiving events on our `stdout` we can do the following:
 
 Stop [Logstash] service:
+`Ubuntu 14.04`
 ```
 sudo service logstash stop
+```
+`Ubuntu 16.04`
+```
+sudo systemctl stop logstash
 ```
 Now start [Logstash] via command line:
 ```
@@ -145,8 +150,13 @@ PID=$(ps -ef | grep logstash/runner.rb | awk '{print $2}') && echo $PID | awk '{
 ```
 
 Now you can start [Logstash] using the service command:
+`Ubuntu 14.04`
 ```
 sudo service logstash start
+```
+`Ubuntu 16.04`
+```
+sudo systemctl start logstash
 ```
 
 At this point you could begin setting up remote devices to send to your [Logstash]

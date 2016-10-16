@@ -27,8 +27,13 @@ output {
 }
 ```
 Now save and exit your editor and restart [Logstash]:
+`Ubuntu 14.04`
 ```
 sudo service logstash restart
+```
+`Ubuntu 16.04`
+```
+sudo systemctl restart logstash
 ```
 
 And there you have it. A quick and simple configuration change to have [Logstash]

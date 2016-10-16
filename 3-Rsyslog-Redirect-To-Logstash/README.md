@@ -78,8 +78,13 @@ redirected.
 
 Now we are ready to restart our [Rsyslog] service in order to apply our new
 configurations.
+`Ubuntu 14.04`
 ```
 sudo service rsyslog restart
+```
+`Ubuntu 16.04`
+```
+sudo systemctl restart rsyslog
 ```
 
 And now at this point we could start configuring remote devices to begin sending

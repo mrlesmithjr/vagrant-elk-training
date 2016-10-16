@@ -38,7 +38,7 @@ One final note is to ensure that [Elasticsearch] is enabled and starts on boot.
 
 `Ubuntu 14.04`
 ```
-sudo update-rc.d elasticsearch defaults 96 9
+sudo update-rc.d elasticsearch defaults 95 10
 ```
 `Ubuntu 16.04`
 ```
@@ -48,8 +48,13 @@ If you are using this [Vagrant] VM to learn with then you will use the
 `Ubuntu 16.04` method above.
 
 Now you are ready to start the [Elasticsearch] service:
+`Ubuntu 14.04`
 ```
 sudo service elasticsearch start
+```
+`Ubuntu 16.04`
+```
+sudo systemctl start elasticsearch
 ```
 
 And now verify that [Elasticsearch] is running:

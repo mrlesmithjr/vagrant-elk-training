@@ -42,7 +42,7 @@ One final note is to ensure that [Logstash] is enabled and starts on boot.
 
 `Ubuntu 14.04`
 ```
-sudo update-rc.d logstash defaults 96 9
+sudo update-rc.d logstash defaults 95 10
 ```
 `Ubuntu 16.04`
 ```
